@@ -1,7 +1,6 @@
 package befaster.solutions.HLO;
 
-import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -16,8 +15,10 @@ public class HelloSolutionTest {
 
   @Test
   public void testHello(){
-    assertThat(helloSolution.hello("Hello, World"), is("Hello, World"));
+    String expected = helloSolution.hello("Hello world");
+    assertEquals(expected, "Hello world" );
 
   }
 
 }
+
